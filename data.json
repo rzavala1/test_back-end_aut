@@ -1,0 +1,16 @@
+{
+  "dropdown_types": "autos",
+  "dropdown_brands": "Acura",
+  "dropdown_models": "ILX",
+  "dropdown_subtypes":"Sed",
+  "dropdown_years": "2018",
+  "dropdown_provinces": "Nuevo Le",
+  "dropdown_cities": "Monterrey",
+  "input_recorrido": "20000",
+  "dropdown_mileageType":"kms",
+  "input_precio": "100000",
+  "dropdown_negotiable": "Negociable",
+  "input_text_area_review": "Descripcion bien chida",
+  "Uploader": ["image1.jpg","image2.jpg","image3.jpg"],
+  "package": "Free"
+}
