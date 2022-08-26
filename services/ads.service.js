@@ -32,12 +32,11 @@ class AdsService {
 
   async createScreenshot(page) {
     await page.click('.nav > li:nth-child(3) > a');
-    await page.waitForSelector('.sidebar-my-vehicles', { display: true });
-    await page.waitForTimeout(2000);
-    /*
-        await page.waitForSelector('.search-results', { display: true });
-        await page.click('.search > .search-results > ul');:last-child
-        await page.waitForTimeout(2000);*/
+    await page.waitForSelector('#aside', { display: true });
+    await page.waitForTimeout(8000);
+    await page.waitForSelector('#aside > .sidebar-content > .sidebar-my-vehicles > .sidebar-my-vehicles-antiscroll > .articles', { display: true });
+    await page.click('#aside > .sidebar-content > .sidebar-my-vehicles > .sidebar-my-vehicles-antiscroll > .articles > div > .article:last-child');
+    await page.waitForTimeout(4000);
     let nameImage = uuid.v1();
     await page.screenshot({
       path: "images/" + nameImage + '.png'
